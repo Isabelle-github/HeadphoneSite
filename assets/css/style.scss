@@ -1,0 +1,26 @@
+// Font: Work sans
+// Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115) 
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap');
+
+
+$backgroundColor:#2e2e2e ;
+$mainColor:rgb(115, 115, 115);
+$anchorColor:#867772 ;
+$titleColor:rgb(234, 204, 194);
+$whiteColor:#fff;
+
+*{
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $backgroundColor;
+    color: $mainColor;
+}
+
+
+h1{
+    border-style: dotted;
+    
+}
