@@ -248,4 +248,35 @@ video {
 #shop {
   background-image: url(../img/section-composition4.jpg);
 }
+
+.join {
+  width: 40%;
+  text-align: center;
+  margin: 0;
+  margin-left: 50%;
+  padding-top: 5em;
+}
+
+.join img {
+  display: block;
+  width: 100%;
+  height: 60%;
+}
+
+.join h3 {
+  color: #ebccc2;
+}
+
+.join p {
+  margin: 1em auto;
+}
+
+.join a {
+  text-decoration: none;
+  text-transform: none;
+  color: #2e2e2e;
+  background-color: #ebccc2;
+  padding: 0.5em 1em;
+  border-color: #ebccc2;
+}
 /*# sourceMappingURL=style.css.map */
