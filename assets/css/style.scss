@@ -44,8 +44,7 @@ $navColor:#ebccc2;
 }
 // ======HEADER=========
 header{
-    nav{
-        border-style: solid;
+    .horizontal{
         padding-top: 1rem;
         display: flex;
         justify-content: space-between;
@@ -62,7 +61,6 @@ header{
             width: 50%;
             margin-left: 50%;
             justify-content:flex-end;
-            border-style: dotted;
             padding-top: 1rem;
             background-color: transparent;
             a{
@@ -76,6 +74,45 @@ header{
                 color: $navColor;
                 text-decoration: underline;
             }
+        }
+    }
+    .vertical{
+        position: fixed;
+        background-color: transparent;
+        div{
+            margin-top: 5rem;
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+            margin-left: 2em;
+        }
+        a{
+            color: $anchorColor;
+            font-size: 1rem;
+            text-decoration:none;
+            background-color: transparent;
+            // margin-top: 5rem;
+        }
+        .dot {
+            height: 15px;
+            width: 15px;
+            background-color:transparent;
+            border-radius: 50%;
+            display: inline-block;
+            border:2px solid $anchorColor;
+        }
+        .vl {
+            border-left: 2px solid $anchorColor;
+            height: 60px;
+            margin-top: 1em;
+        }
+        a:hover{
+            color: $whiteColor;
+        }
+        a:hover span{
+            border: solid 2px $whiteColor;
+            height: 20px;
+            width: 20px;
         }
     }
     h1{

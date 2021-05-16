@@ -10,8 +10,7 @@
   color: #737373;
 }
 
-header nav {
-  border-style: solid;
+header .horizontal {
   padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,23 +25,22 @@ header nav {
   background-color: transparent;
 }
 
-header nav img {
+header .horizontal img {
   display: inline-block;
   margin-left: 5%;
 }
 
-header nav div {
+header .horizontal div {
   width: 50%;
   margin-left: 50%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  border-style: dotted;
   padding-top: 1rem;
   background-color: transparent;
 }
 
-header nav div a {
+header .horizontal div a {
   color: #867772;
   font-size: 1rem;
   margin-right: 4%;
@@ -50,9 +48,59 @@ header nav div a {
   background-color: transparent;
 }
 
-header nav div a:hover {
+header .horizontal div a:hover {
   color: #ebccc2;
   text-decoration: underline;
+}
+
+header .vertical {
+  position: fixed;
+  background-color: transparent;
+}
+
+header .vertical div {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: transparent;
+  margin-left: 2em;
+}
+
+header .vertical a {
+  color: #867772;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+header .vertical .dot {
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #867772;
+}
+
+header .vertical .vl {
+  border-left: 2px solid #867772;
+  height: 60px;
+  margin-top: 1em;
+}
+
+header .vertical a:hover {
+  color: #fff;
+}
+
+header .vertical a:hover span {
+  border: solid 2px #fff;
+  height: 20px;
+  width: 20px;
 }
 
 header h1 {
