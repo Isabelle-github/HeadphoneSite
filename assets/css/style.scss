@@ -1,15 +1,39 @@
+// Go beyond music. Immerse your senses through vibration.
+// DESIGN ALCHEMY 
+// The fundamentals of good design are eternal. Innovation is essential. We balance rigorous design with an openness to experimentation in our mission to create products that enrich your life. The creation of an excellent product is not a matter of simple fabrication. Our long heritage of master craftsmanship, from the materials we select to how we craft each product, imbues everything we make with precision and feeling.
+// The Lounger 
+// The Lounger is your trans-sensory vessel to audio-haptic pleasure. Precision sculpted from luxe material, this high-tech pod is calibrated for comfort and inspired by the Japanese art of origami. Through its seamlessly integrated tablet, it delivers a rich and varied playlist of full-body experiences, with tracks updated monthly. Produced in the Eu, this limited edition lounger is suitable for events, clubs, airlines, hotels, workplaces and indulgence-seeking individuals. Available from February 2018
+
+// Sounds Like Home 
+// There’s this feeling. It’s like your favorite song; like home. Maybe it’s hard to explain, but you know it. It’s when everything is in sync and you are free to decompress, create, design, entertain. It’s that atmosphere created when every element comes together in perfect harmony. When it comes to composing a home, people explore design differently to curate their space. And the beauty of that freedom is that there is more than one correct answer. As long as you pick elements that make you feel at home, you’re on the right track. Maybe it’s a lamp, or a chair. Maybe even a plant, or the music playing in the background. These things aren’t just there by chance - they mean something.
+// AN ALCHEMY OF DESIGN, CRAFT AND SOUND. 
+// Exist to Create. 
+// SOUND DESIGN CRAFT 
+// We define our world through imagination.
+// Sound Alchemy 
+// A feeling for sound 
+// The power of music is without bounds, it goes straight to our hearts. Our job is to do justice to that power. We make that feeling thrive by creating the most impactful, accurate and immersive sound experience possible.
+
+// Sound Architecture 
+// Everything Starts with Architecture 
+// Join us in a conversation among a concept developer, an acoustic engineer and a technical project manager taking us through the creation process of a new, ground breaking product
+// Beoplay H9 
+// Argilla Bright 
+// 500$
+
+
 // Font: Work sans
 // Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115) 
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 
 $backgroundColor:#2e2e2e ;
 $mainColor:rgb(115, 115, 115);
 $anchorColor:#867772 ;
 $titleColor:rgb(234, 204, 194);
 $whiteColor:#fff;
-
+$navColor:#ebccc2;
 *{
     font-family: 'Work Sans', sans-serif;
     box-sizing: border-box;
@@ -18,9 +42,198 @@ $whiteColor:#fff;
     background-color: $backgroundColor;
     color: $mainColor;
 }
+// ======HEADER=========
+header{
+    nav{
+        border-style: solid;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        justify-items: baseline;
+        background-color: transparent;
+        img{
+            display: inline-block;
+            margin-left: 5%;
+        }
+        div{
+            width: 50%;
+            margin-left: 50%;
+            justify-content:flex-end;
+            border-style: dotted;
+            padding-top: 1rem;
+            background-color: transparent;
+            a{
+                color: $anchorColor;
+                font-size: 1rem;
+                margin-right: 4%;
+                text-decoration:none;
+                background-color: transparent;
+            }
+            a:hover{
+                color: $navColor;
+                text-decoration: underline;
+            }
+        }
+    }
+    h1{
+        margin: 8rem auto;
+        width: 25%;
+        color: $titleColor;
+        font-size: 2em;
+    }
+    h1+img{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+}
 
+.navStretch{
+    margin-right: 10%;
+}
 
-h1{
-    border-style: dotted;
+// =======MAIN-ABOUT========
     
+main{
+    section{
+       display: flex;
+       justify-content: center;
+       margin-top: 10%;
+
+       img{
+           width: 35%;
+           height: 50vh;
+       }
+       div{
+           width: 30%;
+           margin-left: 5rem;
+           h1{
+               margin-bottom: 2em;
+               text-transform: uppercase;
+               margin-top: 2em;
+               color: $titleColor;
+               font-size: 2em;
+           }
+       }
+    }
+}
+
+    // =====MAIN-THE LOUNGER-EXPERIENCE========
+
+#lounger{
+    background-image: url(../img/section-voyager.jpg);
+}  
+.images{
+    background-repeat: no-repeat;
+    background-size: 60% 100%;
+    width: 100%;
+    height: 100vh;
+}
+.texts{
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    margin-left: 50%;
+}
+article{
+    padding-left: 3rem;
+    
+       h1{
+           color: $titleColor;
+           margin-top: 10rem;
+           margin-bottom: 8rem;
+           font-size: 2em;
+       }
+       p{
+           width: 80%;
+       }
+}
+#experience{
+    background-image: url(../img/section-experience-1.jpg);
+}
+
+     // =====MAIN-INSPIRATION========
+
+#inspiration{
+    flex-direction: column;
+    p:first-of-type, h3{
+        color: $titleColor;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    h3{
+        font-size: 2em;
+    }
+    p{
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    div:first-of-type{
+        margin-left: 22%;
+    }
+    article{
+        margin: 3rem auto;
+        width: 65%;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        img:first-of-type{
+           grid-column: 1/span 1;
+           grid-row: 1/ span 1;
+           margin: 0;
+           padding: 0;
+           width: 100%;
+        }
+        div:nth-of-type(1){
+            grid-column: 2/span 1;
+            grid-row: 1/ span 1;
+            width: 100%;
+            margin-left: 2em;
+            padding: 0;
+            p:first-of-type{
+                padding-top: 3em;
+                font-size: 1.5em;
+            }
+        }
+        img:nth-of-type(2){
+            grid-column: 2/span 1;
+            grid-row: 2/ span 1;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+         div:nth-of-type(2){
+             grid-column: 1/span 1;
+             grid-row: 2/ span 1;
+             margin: 0;
+             margin-right: 2em;
+             padding: 0;
+             width: 100%;
+             p:first-of-type{
+                padding-top: 3em;
+                font-size: 1.5em;
+            }
+        }
+    }
+   
+} 
+video{
+    margin: 3em auto;
+} 
+.links{
+    text-transform: uppercase;
+    padding:5px;
+    margin-right: 5px;
+    border: solid 1px $whiteColor;
+    text-decoration: none;
+}   
+
+// =======MAIN-SHOP======
+
+#shop{
+    background-image: url(../img/section-composition4.jpg);
 }
